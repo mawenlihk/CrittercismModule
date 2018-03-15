@@ -7,7 +7,7 @@
 
 #import "TiModule.h"
 
-#import "Crittercism.h"
+#import <Crittercism/Crittercism.h>
 
 @interface CrittercismModule : TiModule <CrittercismDelegate>
 {

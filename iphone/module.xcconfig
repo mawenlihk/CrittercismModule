@@ -25,3 +25,6 @@
 //
 // IMPORTANT NOTE: always use $(inherited) in your overrides
 // 
+
+FRAMEWORK_SEARCH_PATHS=$(SRCROOT)/../../modules/iphone/crittercism/1.0.2/platform
+OTHER_LDFLAGS=$(inherited) -framework SystemConfiguration -framework CoreData -framework Crittercism -framework Foundation

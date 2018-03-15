@@ -10,7 +10,7 @@
 #import "TiHost.h"
 #import "TiUtils.h"
 
-#import "Crittercism.h"
+#import <Crittercism/Crittercism.h>
 
 @implementation CrittercismModule
 
@@ -109,7 +109,7 @@
         NSString *app_id;
         ENSURE_ARG_OR_NIL_FOR_KEY(app_id, args, @"appID", NSString);
 
-        [Crittercism enableWithAppID:app_id andDelegate:self];
+        [Crittercism enableWithAppID:app_id];
     } @catch (NSException *exception) {
         NSLog(@"[CrittercismModule] Failed to start.");
     }
